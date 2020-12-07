@@ -1,29 +1,43 @@
-function add_to_display(text){
+var display ;
+var display_content
 
-	console.log(text.toString())
+
+
+function add_to_display(){
+
+	const btn = document.getElementById(event.target.id);
+	const btn_text = btn.textContent
+
+
+	display = document.getElementById('display');
+	display_content = display.textContent
+	
+
+	if (display_content == 0){
+	display.textContent = btn_text
+}
+
+else{
+	display.textContent = display_content + btn_text
+}
 	
 }
 
- <script>
- function getBotResponse() {
- var rawText = $("#textInput").val();
- var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
- $("#textInput").val("");
- $("#chatbox").append(userHtml);
- document
- .getElementById("userInput")
- .scrollIntoView({ block: "start", behavior: "smooth" });
- $.get("/get", { msg: rawText }).done(function (data) {
- var botHtml = '<p class="botText"><span>' + data + "</span></p>";
- $("#chatbox").append(botHtml);
- document
- .getElementById("userInput")
- .scrollIntoView({ block: "start", behavior: "smooth" });
- });
- }
- $("#textInput").keypress(function (e) {
- if (e.which == 13) {
- getBotResponse();
- }
- });
- </script>
+function general_btn(){
+	const btn = event.target.id
+
+	if (btn == 'clear-btn'){
+
+		display.textContent = 0
+	}
+
+	else if (btn == 'del-btn'){
+	
+       display.textContent = display.textContent.toString().substring(0,display.textContent.toString().length-1)
+       console.log(display.textContent)
+	}
+
+	else if (btn == 'equal-btn'){
+        display.textContent = eval(display.textContent.toString())
+	}
+}

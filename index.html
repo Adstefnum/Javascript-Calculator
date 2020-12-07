@@ -6,35 +6,39 @@
 
 <div class = 'calculator'>
 
-<input id = 'display' placeholder="0"></br>
+<div id = 'display'>
+	<p>
+	0
+</p>
+</div></br>
 
-<button onClick = 'add_to_display(+)' id = 'start-btn'> + </button>
-<button onClick = 'add_to_display(x)'> x </button>
-<button onClick = 'add_to_display(/)'> / </button>
-<button onClick = 'add_to_display(-)' > - </button></br>
-<button onClick = 'add_to_display(1)' id = 'start-btn'> 1 </button>
-<button onClick = 'add_to_display(2)'> 2</button>
-<button onClick = 'add_to_display(3)'> 3 </button></br>
-<button onClick = 'add_to_display(4)' id = 'start-btn'> 4 </button>
-<button onClick = 'add_to_display(5)'> 5 </button>
-<button onClick = 'add_to_display(6)'> 6 </button></br>
-<button id = 'start-btn' onClick = 'add_to_display(7)'> 7 </button>
-<button onClick = 'add_to_display(8)'> 8 </button>
-<button onClick = 'add_to_display(9)'> 9 </button></br>
-<button id = 'start-btn' onClick = 'add_to_display(0)'> 0 </button>
-<button onClick = 'add_to_display(00)'> 00 </button>
-<button onClick = 'add_to_display(.)'> . </button></br>
+<button onClick = 'add_to_display()' class = 'start-btn' id = 'plus-btn'> + </button>
+<button onClick = 'add_to_display()' id = 'times-btn'> *</button>
+<button onClick = 'add_to_display()' id = 'div-btn'> / </button>
+<button onClick = 'add_to_display()' id = 'minus-btn'> - </button></br>
+<button onClick = 'add_to_display()' class = 'start-btn' id = 'uno-btn'> 1 </button>
+<button onClick = 'add_to_display()' id = 'dos-btn'> 2</button>
+<button onClick = 'add_to_display()' id = 'tres-btn'> 3 </button></br>
+<button onClick = 'add_to_display()' id = 'cuatro-btn' class = 'start-btn'> 4 </button>
+<button onClick = 'add_to_display()' id = 'cinco-btn'> 5 </button>
+<button onClick = 'add_to_display()' id = 'seis-btn' > 6 </button></br>
+<button class = 'start-btn' onClick = 'add_to_display()' id = 'siete-btn'> 7 </button>
+<button onClick = 'add_to_display()' id = 'ocho-btn'> 8 </button>
+<button onClick = 'add_to_display()'id = 'nueve-btn'> 9 </button></br>
+<button class = 'start-btn' onClick = 'add_to_display()' id = 'cero-btn'> 0 </button>
+<button onClick = 'add_to_display()' id = 'oo-btn'> 00 </button>
+<button onClick = 'add_to_display()' id = 'dec-btn'> . </button></br>
 
-<div id = 'del-btn'>
-<button > del </button>
+<div id = 'del'>
+<button id = 'del-btn' onClick = 'general_btn()'  > del </button>
 </div>
 
-<div id = 'clear-btn'>
-<button > AC </button>
+<div id = 'clear' >
+<button id = 'clear-btn' onClick = 'general_btn()'> AC </button>
 </div>
 
-<div id = 'equal-btn'>
-<button > = </button>
+<div id = 'equal' >
+<button id = 'equal-btn' onClick = 'general_btn()'> = </button>
 </div>
 
 </div>

@@ -25,33 +25,42 @@ button{
 	border-bottom-right-radius: 0px;
 	border-bottom-left-radius: 0px;
 	background-color: orange;
+	font-size: 35px;
+
+
 }
 
-div #equal-btn{
+#display p{
+	position: relative;
+	top: 75px;
+	left: 580px;
+}
+
+div #equal{
 	position: relative;
 	left: 470px;
 	top: -560px;
 
 }
 
-div #clear-btn{
+div #clear{
 	position: relative;
 	left: 470px;
 	top: -560px;
 
 }
 
-div #del-btn{
+div #del{
 	position: relative;
 	left: 470px;
 	top: -560px;
 }
 
 
-#equal-btn button{
+#equal button{
 	height: 260px;
 }
 
-#start-btn{
+.start-btn{
 	margin-left: 50px;
 }
